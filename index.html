@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="author" content="emranweb">
+  <meta name="description" content="A Javascript Regulaer Expression for Form Validation">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto mt-5">
+          <form action="#">
+
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" class="form-control" id="name">
+              <div class="invalid-feedback">
+                Please Enter a name between 2 to 10 chracter
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Your Email</label>
+              <input type="email" class="form-control" id="email">
+              <div class="invalid-feedback">
+                Please Enter a Valid Email Address
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Your Phone</label>
+              <input type="number" class="form-control" id="phone">
+              <div class="invalid-feedback">
+                Please Enter a Phone Number between 6 to 12 chracter
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Your Zip</label>
+              <input type="number" class="form-control" id="zip">
+              <div class="invalid-feedback">
+                Please Enter a name between 2 to 10 chracter
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea id="text-area" class="form-control" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <h2>Done</h2>
+          <h3>Thanks For Your Submission</h3>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
